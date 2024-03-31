@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Cambio el color de fondo del body */
+    background-color: #F3FEFA;
+
+    /* Cambia la fuente de letra */
+    font-family: system-ui;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* top right bottom left */
+    padding: 16px 24px 16px 24px;
+
+    /* padding-left: 24px;
+    padding-right: 24px; */
+    /* Aplica un posicionamiento relativo  */
+    /* position: relative; */
+    
+    /* Establecemos una altura al elemento */
+    /* height: 72px; */
+}
+
+.icon-nav {
+    /* Aplica un posicionamiento absoluto  */
+    /* position: absolute; */
+
+    /* Movemos el elemento a la izquierda gracias al absolute  */
+    /* left: 24px; */
+    /* padding-left: 24px; */
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.menu-nav {
+    /* position: absolute; */
+    /* Movemos el elemento a la derecha gracias al absolute  */
+    /* right: 24px; */
+    
+    /* Quita el estilo de la lista */
+    list-style-type: none;
+
+    /* padding-right: 24px; */
+    
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.menu-nav li {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+/* No se usa */
+.center-element {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a {
+    text-decoration-line: none;
+    font-weight: 500;
+    color: black;
+    transition: color 0.2s; /* 0.3s = 300ms */
+}
+
+a:hover {
+    color: #84a98c;
+}
+
+/* Main */
+
+footer {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

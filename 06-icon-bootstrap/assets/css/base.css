@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 400;
+    src: url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
+}
+
+/* medium = 500 */
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 500;
+    src: url('../fonts/SF-Pro-Display-Medium.woff') format('woff');
+}
+
+/* semiBold = 600 */
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 600;
+    src: url('../fonts/SFProDisplay-Semibold.woff') format('woff');
+}
+
+/* bold = 700 */
+@font-face {
+    font-family: 'San Francisco';
+    font-weight: 700;
+    src: url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}

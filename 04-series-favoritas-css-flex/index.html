@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Series Favoritas</title>
+    <meta name="description" content="Sitio web de mis series favoritas" />
+    <meta name="keywords" content="series, favoritas, rafael, netflix" />
+    <!-- Ponen su nombre -->
+    <meta name="author" content="Rafael Sequeira Sandoval" />
+
+    <!-- Enlace del archivo de estilos -->
+    <link rel="stylesheet" href="./assets/css/globals.css" />
+
+    <style>
+      main {
+        /* Centrando usando flex */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Centrando usando grid */
+        /* display: grid;
+    place-content: center; */
+
+        height: calc(100vh - 72px - 53px);
+      }
+
+      main section {
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        text-align: center;
+      }
+
+      .title {
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="icon-nav">
+        <img
+          src="./assets/images/movie-black.svg"
+          alt="logo de mi sitio web"
+          width="40px"
+          height="40px"
+        />
+      </div>
+
+      <ul class="menu-nav">
+        <li>
+          <a href="./gambito.html">Gambito de dama</a>
+        </li>
+        <li>
+          <a href="./mr-robot.html">Mr. Robot</a>
+        </li>
+        <li>
+          <a href="./dahmer.html">Dahmer</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1 class="title">Mis Series Favoritas</h1>
+        <p>
+          Este es un sitio web que presenta mis
+          <strong>series favoritas</strong>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Todos los derechos reservados - Rafael Sequeira Sandoval</p>
+    </footer>
+  </body>
+</html>

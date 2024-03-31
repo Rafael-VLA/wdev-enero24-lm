@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px); /*200px 200px 200px*/
+            gap: 12px;
+        }
+
+        .face {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .container-point {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .point {
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Grid</h1> -->
+
+    <div class="container">
+        <div class="face">
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+
+            <div class="container-point"></div>
+            <div class="container-point">
+                <span class="point"></span>
+            </div>
+            <div class="container-point"></div>
+
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+        </div>
+
+
+        <div class="face">
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+            <div class="container-point">
+                <span class="point"></span>
+            </div>
+
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+
+            <div class="container-point">
+                <span class="point"></span>
+            </div>
+            <div class="container-point"></div>
+            <div class="container-point"></div>
+        </div>
+
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+    </div>
+</body>
+</html>

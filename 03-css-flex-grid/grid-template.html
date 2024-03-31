@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid template</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+        grid-template-areas: 
+            "nav nav"
+            "sidebar main";
+      }
+
+      .navbar {
+        grid-area: nav;
+        background-color: red;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+        background-color: green;
+    }
+    
+    .main {
+        grid-area: main;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div>
+            logo
+        </div>
+        <div>parrafo</div>
+      </nav>
+      <aside class="sidebar"></aside>
+      <main class="main"></main>
+    </div>
+  </body>
+</html>

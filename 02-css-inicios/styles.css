@@ -1,0 +1,26 @@
+#contenedor {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+}
+
+#contenedor-hijo {
+    background-color: red;
+    /* width: 100px;
+    height: 150px; */
+    width: 50%;
+    height: 75%;
+}
+
+#rojo {
+    color: red;
+}
+
+#azul {
+    color: blue;
+}
+
+.negrita {
+    font-weight: bold;
+}
