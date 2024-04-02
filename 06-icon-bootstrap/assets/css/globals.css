@@ -2,8 +2,6 @@
 
 body {
     font-family: 'San Francisco', system-ui, sans-serif;
-}
-
-.test {
-    font-size: 32px;
+    background-color: black;
+    color: white;
 }
