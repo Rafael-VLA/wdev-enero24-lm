@@ -5,3 +5,28 @@ body {
     background-color: black;
     color: white;
 }
+
+.custom-link {
+    border: 1px solid var(--custom-link-color);
+    color: var(--custom-link-color);
+    padding: 8px 12px;
+    border-radius: 20px;
+
+    /* 300 ms */
+    transition: transform 0.3s;
+}
+
+/* Solución 2 */
+.custom-link-light {
+    border: 1px solid white;
+    color: white;
+}
+
+.custom-link-dark {
+    border: 1px solid black;
+    color: black;
+}
+
+.custom-link:hover {
+    transform: scale(1.1);
+}

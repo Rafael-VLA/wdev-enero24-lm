@@ -50,20 +50,83 @@
 
     <main>
         <!-- Sections -->
-        <section class="container">
+        <!-- Problema de desbordamiento -->
+        <!-- <section style="padding: 40px 0px 30px 0px;" class="container"> -->
+        <section style="padding-top: 40px; padding-bottom: 30px;" class="container">
             <div class="row">
-                <div class="col-12 col-md-6 bg-success">
-                  Column 1
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+
+                  <div class="d-flex flex-column gap-4">
+                    <!-- Títulos -->
+                    <!-- text-center = text-align: center -->
+                    <div style="gap: 36px;" class="d-flex flex-column text-center">
+                        <h2 class="font-semi-bold display-6">
+                            <i class="fa-brands fa-apple"></i>
+                            iPhone
+                        </h2>
+                        <h1 class="font-bold display-3">Hasta $100 OFF</h1>
+                        <h2 class="h4">24 meses 0% interés</h2>
+                    </div>
+
+                    <!-- Enlace -->
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="custom-link">Comprar</a>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="col-12 col-md-6 bg-danger">
-                  Column 2
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                  <img style="max-width: 507px; width: 100%;" src="./assets/images/phone1.png" alt="Foto primer iphone">
                 </div>
             </div>
         </section>
 
-        <div style="background-color: white;">
-            <button>▶️</button>
-        </div>
+        <section style="color: black" class="bg-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center order-last order-md-first mt-4">
+                        <img style="max-width: 570px; width: 100%;" src="./assets/images/phone2.png" alt="Foto segundo iphone">
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+
+                        <div class="d-flex flex-column gap-4">
+                          <!-- Títulos -->
+                          <!-- text-center = text-align: center -->
+                          <div style="gap: 36px;" class="d-flex flex-column text-center">
+                              <h2 class="font-semi-bold display-6">
+                                  <i class="fa-brands fa-apple"></i>
+                                  iPhone 15
+                              </h2>
+                              <h1 class="font-bold display-3 lh-1">
+                                Nueva cámara.
+                                <br>
+                                Nuevo diseño.
+                                <br>
+                                Nuevocionante.
+                              </h1>
+                              <h2 class="h4 font-regular">Desde <strong>$48</strong> por mes sin intereses.</h2>
+                          </div>
+      
+                          <!-- Enlace -->
+                          <div style="--custom-link-color: #000" class="d-flex justify-content-center gap-5">
+                            <!-- Solución 1 -->
+                              <!-- <a style="color: black; border-color: black;" href="#" class="custom-link">Comprar</a>
+                              <a style="color: black; border-color: black;" href="#" class="custom-link">Ver más</a> -->
+
+                              <!-- Solución 2 -->
+                              <!-- <a href="#" class="custom-link custom-link-dark">Comprar</a>
+                              <a href="#" class="custom-link custom-link-dark">Ver más</a> -->
+
+                              <a href="#" class="custom-link">Comprar</a>
+                              <a href="#" class="custom-link">Ver más</a>
+                          </div>
+                        </div>
+      
+                      </div>
+                </div>
+            </div>
+        </section>
     </main>
   
   <!-- Modal -->

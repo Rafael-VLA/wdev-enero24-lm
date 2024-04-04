@@ -1,4 +1,8 @@
 
+:root {
+    --custom-link-color: white;
+}
+
 @font-face {
     font-family: 'San Francisco';
     font-weight: 400;
@@ -26,6 +30,10 @@
     src: url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
 }
 
+.font-regular {
+    font-weight: 400;
+}
+
 .font-medium {
     font-weight: 500;
 }
@@ -36,4 +44,9 @@
 
 .font-bold {
     font-weight: 700;
+}
+
+a {
+    text-decoration-line: none;
+    color: gray;
 }
