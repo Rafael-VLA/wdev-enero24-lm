@@ -16,6 +16,13 @@ body {
     transition: transform 0.3s;
 }
 
+.custom-title {
+   /* background: linear-gradient(to right, #FFF, #fe9494);  */
+   background: linear-gradient(318deg, #FE9494 30%, #FFFFFF 70%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
 /* Solución 2 */
 .custom-link-light {
     border: 1px solid white;
@@ -30,3 +37,39 @@ body {
 .custom-link:hover {
     transform: scale(1.1);
 }
+
+.custom-footer-link{
+    /* font-size: 14px; */
+    transition: 0.3s;
+}
+.custom-footer-link:hover{
+    color: white;
+}
+
+footer p.h6{
+    /* font-size: 14px; */
+}
+
+/* 
+before
+<div>
+...
+</div>
+after
+*/
+
+/*pequeno div*/
+
+/*
+Uso de pseudo elemento
+.custom-element::after { 
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.custom-element:focus::after {
+    content: '-';
+} */
