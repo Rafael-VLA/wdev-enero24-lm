@@ -48,5 +48,12 @@
 
 a {
     text-decoration-line: none;
-    color: gray;
+    color: currentColor;
 }
+/* 
+div = color:red
+...
+
+a
+
+div */

@@ -46,6 +46,29 @@ body {
     color: white;
 }
 
+footer ul {
+    color: gray;
+}
+
+.custom-social {
+    background-color: #7C7C7C; 
+    color: black;
+    width: 38px;
+    height: 38px;
+
+    /* Con css */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s ease; /* 0.3s = 300ms */
+}
+
+.custom-social:hover {
+    background-color:  #707070;
+}
+
 footer p.h6{
     /* font-size: 14px; */
 }
