@@ -28,5 +28,7 @@ Pueden evitar todo el proceso por medio de los links de esta lista. Solo selecci
 
 - [06-icon-bootstrap](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/06-icon-bootstrap)
 
+- [07-javascript-inicios](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/07-javascript-inicios)
+
 ## Notas
 - El directorio "docs" no es un proyecto. Se usará para realizar despligues de nuestros proyectos por medio del servicio de github pages.
