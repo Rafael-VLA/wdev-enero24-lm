@@ -12,3 +12,7 @@
 a {
     text-decoration: none;
 }
+
+.custom-card {
+    cursor: pointer;
+}

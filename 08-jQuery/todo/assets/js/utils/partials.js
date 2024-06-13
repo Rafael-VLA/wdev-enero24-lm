@@ -12,7 +12,7 @@ const crearCategoria = (categoria = new Categoria()) => {
 
     return `
         <div class="col-6 col-md-3 col-lg-2">
-            <div class="position-relative custom-card bg-dark text-white rounded-2 px-4 py-5 text-center">
+            <div data-title-categoria="${categoria.title}" class="position-relative custom-card bg-dark text-white rounded-2 px-4 py-5 text-center">
 
 
                 <div class="dropdown position-absolute top-0 end-0 me-2 mt-2">
@@ -20,7 +20,7 @@ const crearCategoria = (categoria = new Categoria()) => {
                         <i  class="bi bi-three-dots"></i>
                     </span>
                     <ul class="dropdown-menu">
-                        <li id="delete" data-id-categoria="${categoria.id}" role="button" class="dropdown-item">Eliminar</li>
+                        <li data-id-categoria="${categoria.id}" role="button" class="dropdown-item">Eliminar</li>
                     </ul>
                 </div>
 
@@ -35,8 +35,10 @@ const crearCategoria = (categoria = new Categoria()) => {
     `;
 }
 
-export const crearCategorias = (listaCategorias = []) => {
-    listaCategorias.forEach(categoria => {
+export const crearCategorias = () => {
+    const categorias = JSON.parse(localStorage.getItem('categorias'));
+
+    categorias.forEach(categoria => {
         $('#contenedor-categorias').append(crearCategoria(categoria));
     })
 }
