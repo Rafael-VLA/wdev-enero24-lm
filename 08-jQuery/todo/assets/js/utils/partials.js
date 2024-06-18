@@ -35,6 +35,9 @@ const crearCategoria = (categoria = new Categoria()) => {
     `;
 }
 
+// const state = true;
+// const partial = `<input class="form-check-input" type="checkbox" id="flexCheckDefault" ${state === true ? 'checked' : ''}>`;
+
 export const crearCategorias = () => {
     const categorias = JSON.parse(localStorage.getItem('categorias'));
 

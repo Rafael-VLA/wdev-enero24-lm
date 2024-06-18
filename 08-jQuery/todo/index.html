@@ -21,17 +21,9 @@
                 TODO
             </a>
 
-            <div class="dropdown dropstart">
-                <button class="btn btn-dark btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i style="font-size: 18px;" class="bi bi-plus text-white"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li role="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#categoria">Nueva
-                        Categoría</li>
-                    <li role="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#tarea">Nueva Tarea
-                    </li>
-                </ul>
-            </div>
+            <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#categoria">
+                <i style="font-size: 18px;" class="bi bi-plus text-white"></i>
+            </button>
         </div>
     </nav>
 
@@ -83,43 +75,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-dark btn-sm" form="form-categoria">Guardar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal tarea -->
-    <div class="modal fade" id="tarea" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-6">Agregar Nueva Tarea</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="form-tarea">
-                        <div class="mb-3">
-                            <label for="tarea-titulo" class="form-label">Título</label>
-                            <input type="text" class="form-control" id="tarea-titulo">
-                        </div>
-                        <div class="mb-3">
-                            <label for="tarea-categoria" class="form-label">Seleccione la categoría</label>
-                            <select class="form-select" id="tarea-categoria">
-                                <option value="1">Compras</option>
-                                <option value="2">Otra</option>
-                                <option value="3">Otra</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="tarea-desc" class="form-label">Descripción</label>
-                            <textarea class="form-control" id="tarea-desc" rows="3"></textarea>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-dark btn-sm" form="form-tarea">Guardar</button>
                 </div>
             </div>
         </div>
