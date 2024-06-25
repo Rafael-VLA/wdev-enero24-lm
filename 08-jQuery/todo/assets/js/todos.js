@@ -35,6 +35,11 @@ $(document).ready(() => {
         $('#tarea-categoria').append(`<option class="text-capitalize" value="${categoria}">${categoria}</option>`);
     });
 
+    $('.form-check-input').change((e) => {
+        //console.log(e.target.checked)
+        console.log($(e.target).prop('checked'))
+    })
+
     console.log(nombresCategorias);
 
     // Tarea 
