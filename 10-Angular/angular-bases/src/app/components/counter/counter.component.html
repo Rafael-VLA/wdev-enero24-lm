@@ -1,0 +1,18 @@
+<h6>{{ title }}</h6>
+<div class="d-flex gap-3 align-items-center">
+    <button (click)="decrementar()" class="btn btn-primary">-</button>
+    <span class="font-weight-bold">{{ counter }}</span>
+    <button (click)="incrementar()" class="btn btn-primary">+</button>
+</div>
+
+
+<!-- Solo usanddo ngIf -->
+<!-- <p *ngIf="counterEsMayor">El contador es mayor o igual que 10</p>
+<p *ngIf="counterEsMenor">El contador es menor a 10</p> -->
+
+<!-- Usando ngIf else -->
+<small *ngIf="counterEsMayor; else elseBlockCounter">El contador es mayor o igual que 10</small>
+
+<ng-template #elseBlockCounter>
+    <small>El contador es menor a 10</small>
+</ng-template>
