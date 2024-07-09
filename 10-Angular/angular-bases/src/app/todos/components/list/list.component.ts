@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Todo } from '../../interface/todo';
+import { Todo } from '../../interfaces/todo';
 
 const todo1: Todo = {
   id: crypto.randomUUID(),
@@ -20,11 +20,11 @@ const todo3: Todo = {
 }
 
 @Component({
-  selector: 'app-todos',
-  templateUrl: './todos.component.html',
-  styleUrl: './todos.component.css'
+  selector: 'todos-list', // [nombreModule]-[nombreComponent]
+  templateUrl: './list.component.html',
+  styleUrl: './list.component.css'
 })
-export class TodosComponent {
+export class ListComponent {
   
   public todos: Todo[] = [todo1, todo2, todo3];
   public inputText: string = '';

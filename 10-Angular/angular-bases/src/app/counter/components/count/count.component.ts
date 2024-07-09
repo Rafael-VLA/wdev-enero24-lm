@@ -1,11 +1,11 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: 'app-counter',
-    templateUrl: './counter.component.html',
-    styleUrl: './counter.component.css'
+    selector: 'counter-count', // [nombreModulo]-[nombreComponent]
+    templateUrl: './count.component.html',
+    styleUrl: './count.component.css'
 })
-export class CounterComponent {
+export class CountComponent {
     // crear variable con nombre counter de tipo numero y usarla en el html
     @Input() public title: string = "";
     public counter: number = 0;
