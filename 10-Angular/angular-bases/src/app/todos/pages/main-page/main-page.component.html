@@ -3,8 +3,12 @@
     <div class="d-flex justify-content-center">
 
         <div style="max-width: 500px;" class="w-100">
-        
-            <todos-list></todos-list>
+            <todos-add-todo (onAddTodo)="todosService.addTodo($event)"></todos-add-todo>
+            <todos-list 
+                [todos]="todosService.todos" 
+                (onDelete)="todosService.handleDelete($event)" 
+                (onCheck)="todosService.handleCheck($event)"
+            ></todos-list>
         </div>
     </div>
 </div>

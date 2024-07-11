@@ -1,13 +1,19 @@
 
-    <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
-        <div class="input-group input-group-sm">
-            
-            <!-- Sin ngModel -->
-            <!-- (change)="handleChange($event)" -->
-            <!-- [value]="inputText"  -->
-            <!-- <input [(ngModel)]="inputText" type="text" class="form-control" (keydown)="handleKeyDown($event)" /> -->
-            
-        </div>
+<div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+    <div class="input-group input-group-sm">
         
-        <button class="btn btn-outline-success btn-sm" (click)="handleAdd()">Agregar</button>
+        <!-- Sin ngModel -->
+        <!-- (change)="handleChange($event)" -->
+        <!-- [value]="inputText"  -->
+        <!--  (keydown)="handleKeyDown($event)" -->
+        <input 
+            [(ngModel)]="inputText" 
+            type="text" 
+            class="form-control" 
+            (keydown)="handleKeyDown($event)"
+        />
+        
     </div>
+    
+    <button class="btn btn-outline-success btn-sm" (click)="handleAdd()">Agregar</button>
+</div>

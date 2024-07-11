@@ -1,28 +1,9 @@
 
-<!-- <div class="d-flex justify-content-center">
-
-    <div style="max-width: 500px;" class="w-100"> -->
-        <!-- <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
-            <div class="input-group input-group-sm"> -->
-
-                <!-- Sin ngModel -->
-                <!-- (change)="handleChange($event)" -->
-                <!-- [value]="inputText"  -->
-                <!-- <input [(ngModel)]="inputText" type="text" class="form-control" (keydown)="handleKeyDown($event)" />
-
-            </div>
-
-            <button class="btn btn-outline-success btn-sm" (click)="handleAdd()">Agregar</button>
-        </div> -->
-
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let todo of todos">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span [ngClass]="{ 'checked': todo.checked }" style="user-select: none;" role="button" (click)="handleChecked(todo.id)">{{ todo.title }}</span>
-                    <button class="btn btn-outline-danger btn-sm" (click)="handleDelete(todo.id)">Eliminar</button>
-                </div>
-            </li>
-        </ul>
-
-    <!-- </div>
-</div> -->
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let todo of todos">
+        <div class="d-flex justify-content-between align-items-center">
+            <span [ngClass]="{ 'checked': todo.checked }" style="user-select: none;" role="button" (click)="handleCheck(todo.id)">{{ todo.title }}</span>
+            <button class="btn btn-outline-danger btn-sm" (click)="handleDelete(todo.id)">Eliminar</button>
+        </div>
+    </li>
+</ul>

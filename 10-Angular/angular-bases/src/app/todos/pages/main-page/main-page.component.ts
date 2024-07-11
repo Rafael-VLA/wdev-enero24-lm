@@ -1,4 +1,7 @@
 import { Component } from "@angular/core";
+import { Todo } from "../../interfaces/todo";
+import { TodosService } from "../../services/todos.service";
+
 
 @Component({
     selector: "todos-main-page",
@@ -6,4 +9,9 @@ import { Component } from "@angular/core";
 })
 export class MainPageComponent {
 
+  constructor(public todosService: TodosService){ // Injección de dependencí
+    
+  }
+
+  
 }
