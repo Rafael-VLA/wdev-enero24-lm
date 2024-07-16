@@ -9,9 +9,24 @@ import { TodosService } from "../../services/todos.service";
 })
 export class MainPageComponent {
 
-  constructor(public todosService: TodosService){ // Injección de dependencí
+  constructor(private todosService: TodosService){ // Injección de dependencí
     
   }
 
-  
+  addTodo(todo: Todo){
+    this.todosService.addTodo(todo)
+  }
+
+  get todos() { // Lo interpreta como una propiedad
+    return this.todosService.todos;
+  }
+
+  handleDelete(idTodo: string){
+    this.todosService.handleDelete(idTodo);
+  }
+
+  handleCheck(idTodo: string){
+    this.todosService.handleCheck(idTodo);
+  }
+
 }

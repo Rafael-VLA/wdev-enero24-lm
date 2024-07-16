@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { CounterModule } from './counter/counter.module';
 import { TodosModule } from './todos/todos.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     CounterModule,
     TodosModule,
+    SharedModule,
+    HttpClientModule,
     ToastrModule.forRoot()
   ],
   providers: [],

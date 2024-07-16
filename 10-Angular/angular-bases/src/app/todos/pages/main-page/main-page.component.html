@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-center">
 
         <div style="max-width: 500px;" class="w-100">
-            <todos-add-todo (onAddTodo)="todosService.addTodo($event)"></todos-add-todo>
+            <todos-add-todo (onAddTodo)="addTodo($event)"></todos-add-todo>
             <todos-list 
-                [todos]="todosService.todos" 
-                (onDelete)="todosService.handleDelete($event)" 
-                (onCheck)="todosService.handleCheck($event)"
+                [todos]="todos" 
+                (onDelete)="handleDelete($event)" 
+                (onCheck)="handleCheck($event)"
             ></todos-list>
         </div>
     </div>

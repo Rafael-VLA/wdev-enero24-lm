@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">{{user.id  }}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+            <!-- <a [href]="concatenar(user.website)">{{ user.website }}</a> -->
+            <a [href]="'https://' + user.website">{{ user.website }}</a>
+        </td>
+      </tr>
+    </tbody>
+</table>
