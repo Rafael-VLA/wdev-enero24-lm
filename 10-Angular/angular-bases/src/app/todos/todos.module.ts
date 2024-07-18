@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ListComponent } from './components/list/list.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { TodosRoutingModule } from './todos-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    TodosRoutingModule
   ]
 })
 export class TodosModule { }

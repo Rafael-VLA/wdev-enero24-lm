@@ -11,8 +11,8 @@ import { CounterModule } from './counter/counter.module';
 import { TodosModule } from './todos/todos.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { HttpClientModule } from '@angular/common/http';
-
+import { provideHttpClient } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,10 +25,10 @@ import { HttpClientModule } from '@angular/common/http';
     CounterModule,
     TodosModule,
     SharedModule,
-    HttpClientModule,
+    // HttpClientModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

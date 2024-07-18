@@ -1,10 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { User } from "../interfaces/user";
+import { BaseUser, User } from "../interfaces/user";
 
 import { Observable } from "rxjs";
-import { getLocaleFirstDayOfWeek } from "@angular/common";
-import { DEFAULT_INTERPOLATION_CONFIG } from "@angular/compiler";
 
 @Injectable({ providedIn: "root" })
 export class UserService {
@@ -26,4 +24,9 @@ export class UserService {
     getUsers():Observable<User[]> {
         return this.http.get<User[]>(this.apiUrl);
     }
+
+    getUser(user: BaseUser): Observable<BaseUser> {
+        return this.http.post<BaseUser>(this.apiUrl, user)
+    }
+    
 }
