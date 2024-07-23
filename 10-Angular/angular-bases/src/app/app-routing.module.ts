@@ -26,7 +26,8 @@ const routes: Routes = [
   },
   {
     path: "todos",
-    loadChildren: () => TodosModule
+    loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule)
+    //loadChildren: () => TodosModule
   },
   {
     path: "**", // en caso de que no se encuentre un path válido
