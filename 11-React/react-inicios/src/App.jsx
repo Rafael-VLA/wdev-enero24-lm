@@ -4,7 +4,8 @@ export const App = () => {
 
   return (
     <div>
-      <Counter />
+      <h1>App</h1>
+      <Counter title="Counter 100" />
     </div>
   )
 }
