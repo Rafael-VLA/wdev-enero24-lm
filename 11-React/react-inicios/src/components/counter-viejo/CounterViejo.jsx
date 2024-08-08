@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import styles from './counter.module.css';
+//import styles from './counter.module.css';
 
 // Usando clase
 // import { Component } from "react";
@@ -27,9 +27,9 @@ import styles from './counter.module.css';
 
 // Usando función
 
-export const Counter = ({ title, initialCounter = 10 }) => { // properties
+export const CounterViejo = ({ title, initialCounter = 10 }) => { // properties
     const [ counter, setCounter ] = useState(initialCounter); // [state, setState]
-    console.log(styles)
+
     // const cotainerCounterStyles = { 
     //     display: "flex", 
     //     gap: "4px", 
@@ -40,23 +40,27 @@ export const Counter = ({ title, initialCounter = 10 }) => { // properties
     // const setCounter = state[1];
 
     //let counter = 10; // simulando el estado
+
+    const buttonStyles = "bg-[#0e7ccf] text-white px-2 py-1 rounded-md transition-colors hover:bg-[#0e7ccf]/80 active:bg-[#0e7ccf]";
     
     return( // retornamos jsx - background-color: red = backgroundColor: "red" 
-        <div className="flex flex-col gap-2">
-            <p className="text-[#0e7ccf]">{ title }</p>
+        <div className="max-w-56 p-4 flex flex-col items-center border border-black/20 rounded-3xl">
+            <p className="font-semibold">{ title }</p>
+
+            <hr className="my-3 w-full border-b border-black/10" />
 
             {/* <div style={cotainerCounterStyles}> */}
             {/* <div className={`cotainerCounterStyles ${counter%2 === 0 ? "first-color" : "second-color"}`}> */}
-            <div>
-                <button onClick={() => setCounter(counter - 1)}>Restar</button>
-                <h4 className={ styles.primaryText }>{ counter }</h4>
-                <button onClick={() => setCounter(counter + 1)}>Sumar</button>
+            <div className="flex gap-2 items-center">
+                <button className={buttonStyles} onClick={() => setCounter(counter - 1)}>Restar</button>
+                <h4 className="font-medium">{ counter }</h4>
+                <button className={buttonStyles} onClick={() => setCounter(counter + 1)}>Sumar</button>
             </div>
         </div>
     )
 }
 
-Counter.propTypes = {
+CounterViejo.propTypes = {
     title: PropTypes.string,
     initialCounter: PropTypes.number
 }

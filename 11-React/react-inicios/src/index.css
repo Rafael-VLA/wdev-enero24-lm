@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.btn-primary {
+    @apply bg-[#0e7ccf] text-white px-2 py-1 rounded-md transition-colors hover:bg-[#0e7ccf]/80 active:bg-[#0e7ccf]
+}
+
 .cotainerCounterStyles {
     display: flex;
     gap: 4;
