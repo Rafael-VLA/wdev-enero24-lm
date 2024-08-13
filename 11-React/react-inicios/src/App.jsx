@@ -1,6 +1,8 @@
 // import { CounterViejo } from "./components/counter-viejo/CounterViejo"
 
-import { ReactEventos } from "./components/ReactEventos"
+// import { Card } from "./components/Card"
+import { ListUsers } from "./components/ListUsers"
+// import { ReactEventos } from "./components/ReactEventos"
 
 // import { useState } from "react"
 // import { CounterUseEffect } from "./components/hooks/CounterUseEffect"
@@ -28,7 +30,16 @@ export const App = () => {
         show === true ? <CounterUseEffect /> : null 
       } */}
 
-      <ReactEventos />
+      {/* <ReactEventos /> */}
+
+      {/* <Card>
+        <div className="flex flex-col gap-2">
+          <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <button className="btn-primary">Más información</button>
+        </div>
+      </Card> */}
+
+      <ListUsers />
       
     </div>
   )
