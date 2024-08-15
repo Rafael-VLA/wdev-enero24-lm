@@ -1,7 +1,8 @@
 // import { CounterViejo } from "./components/counter-viejo/CounterViejo"
 
 // import { Card } from "./components/Card"
-import { ListUsers } from "./components/ListUsers"
+import { CustomForm } from "./components/CustomForm"
+// import { ListUsers } from "./components/ListUsers"
 // import { ReactEventos } from "./components/ReactEventos"
 
 // import { useState } from "react"
@@ -39,7 +40,8 @@ export const App = () => {
         </div>
       </Card> */}
 
-      <ListUsers />
+      {/* <ListUsers /> */}
+      <CustomForm />
       
     </div>
   )
