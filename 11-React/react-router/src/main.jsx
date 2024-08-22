@@ -8,11 +8,14 @@ import { HomePage } from './pages/HomePage'
 import { UserPage } from './pages/UserPage'
 import { AboutPage } from './pages/AboutPage'
 import { MainLayout } from './layout/MainLayout'
+import { UserQueryPage } from './pages/UserQueryPage'
+import { PostsPage } from './pages/PostsPage'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <h1>Página no encontrada</h1>,
     children: [
       {
         path: "", // pagina principal
@@ -21,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/user",
         element: <UserPage />
+      },
+      {
+        path: "/user-query/:userId",
+        element: <UserQueryPage />
+      },
+      {
+        path: "/posts",
+        element: <PostsPage />
       },
       {
         path: "/about",

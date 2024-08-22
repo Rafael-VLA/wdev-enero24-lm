@@ -1,0 +1,6 @@
+// export const AGREGAR_USUARIO = "AGREGAR USUARIO";
+
+export const userTypes = Object.freeze({
+    AGREGAR_USUARIO: "AGREGAR USUARIO",
+    SELECCIONAR_USUARIO: "SELECCIONAR_USUARIO"
+});

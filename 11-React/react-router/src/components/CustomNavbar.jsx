@@ -8,6 +8,8 @@ export const CustomNavbar = () => {
     const navigation = [
         { title: "Home", path: "/" },
         { title: "User", path: "/user" },
+        { title: "Consultar usuario", path: "/user-query/1" },
+        { title: "Posts", path: "/posts" },
         { title: "About", path: "/about" }
     ]
 
