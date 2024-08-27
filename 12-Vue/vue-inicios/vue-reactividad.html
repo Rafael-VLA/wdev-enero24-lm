@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactividad vue</title>
+</head>
+<body>
+    <h1>Hola</h1>
+
+    <button>Cambia nombre</button>
+
+    <script>
+        const persona = {};
+
+        let nombre = ""; // Simulando una propiedad reactiva de Vue
+
+        Object.defineProperty(persona, 'nombre', {
+            get: () => {
+                console.log("Obteniendo nombre")
+                return nombre
+            },
+            set: (newValue) => {
+                console.log("Cambiando propiedad")
+
+                document.querySelector("h1").innerText = newValue;
+                nombre = newValue;
+            }
+        })
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            persona.nombre = "Rafael";
+
+            document.querySelector("button").addEventListener("click", () => {
+                persona.nombre = "Pepe";
+            })
+        })
+
+    </script>
+</body>
+</html>

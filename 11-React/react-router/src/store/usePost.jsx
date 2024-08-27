@@ -2,7 +2,8 @@ import { create } from 'zustand';
 
 export const usePost = create((set) => ({ // set = función que permite cambiar el estado
     posts: [],
-    loadPost: (newPosts) => {
+    // otras propiedades...
+    loadPost: (newPosts) => { // Vienen de un endpoint
         
         set(state => {
 
@@ -13,4 +14,5 @@ export const usePost = create((set) => ({ // set = función que permite cambiar 
         })
         
     }
+    // otras funciones...
 }));
