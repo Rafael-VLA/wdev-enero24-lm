@@ -1,0 +1,1 @@
+export const fotoGato = 'https://plus.unsplash.com/premium_photo-1673461703605-0c6cc77e1a35'
