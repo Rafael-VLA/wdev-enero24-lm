@@ -14,7 +14,7 @@ export default {
             srcImage: fotoGato,
             altImage: "Alt de información para la foto",
             customStyle: { color: "green" },
-            width: "500px"
+            width: "250px"
         }
     }
 }

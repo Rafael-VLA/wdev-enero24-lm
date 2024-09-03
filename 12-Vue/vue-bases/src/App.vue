@@ -14,7 +14,13 @@
         Enviar
      </CustomButton> -->
 
-     <custom-card-gato />
+     <!-- <custom-card-gato /> -->
+
+     <!-- <show-card></show-card> -->
+     <!-- <h1 :class="styles['title-underline']">APP</h1> -->
+     <h1 class="title-color2">APP</h1>
+     <!-- <ListUser /> -->
+      <VueEvents />
 
 </template>
 
@@ -22,12 +28,25 @@
 import CustomCounter from './components/CustomCounter.vue'; // En Vue se recomienda que las importaciones se realicen por defecto 
 import CustomButton from './components/CustomButton.vue';
 import CustomCardGato from './components/CustomCardGato.vue';
+import ShowCard from './components/ShowCard.vue';
+import ListUser from './components/ListUser.vue';
+import VueEvents from './components/VueEvents.vue';
+
+import styles from './app.module.css';
 
 export default {
     components: { // = CustomCounter: CustomCounter
         CustomCounter,
         CustomButton,
-        CustomCardGato
+        CustomCardGato,
+        ShowCard,
+        ListUser,
+        VueEvents
+    },
+    data(){
+        return {
+            styles
+        }
     },
     methods: {
         // Crear métodos para el template 
