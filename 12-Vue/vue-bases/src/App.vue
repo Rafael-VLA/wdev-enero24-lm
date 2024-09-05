@@ -18,9 +18,11 @@
 
      <!-- <show-card></show-card> -->
      <!-- <h1 :class="styles['title-underline']">APP</h1> -->
-     <h1 class="title-color2">APP</h1>
+     <!-- <h1 class="title-color2">APP</h1> -->
+     <!-- <custom-form /> -->
      <!-- <ListUser /> -->
-      <VueEvents />
+      <!-- <VueEvents /> -->
+       <ciclo-vida />
 
 </template>
 
@@ -31,6 +33,8 @@ import CustomCardGato from './components/CustomCardGato.vue';
 import ShowCard from './components/ShowCard.vue';
 import ListUser from './components/ListUser.vue';
 import VueEvents from './components/VueEvents.vue';
+import CustomForm from './components/CustomForm.vue';
+import CicloVida from './components/CicloVida.vue';
 
 import styles from './app.module.css';
 
@@ -41,7 +45,9 @@ export default {
         CustomCardGato,
         ShowCard,
         ListUser,
-        VueEvents
+        VueEvents,
+        CustomForm,
+        CicloVida
     },
     data(){
         return {

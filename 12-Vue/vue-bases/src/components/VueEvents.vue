@@ -13,7 +13,7 @@
             v-model="inputText" 
             type="text"
             @keydown.enter ="handleKeyDown"
-            @keydown.esc = "e => e.target.blur()"
+            @keyup.esc = "e => e.target.blur()"
         />
 
         <!-- handleClick | e => handleClick(e) -->
