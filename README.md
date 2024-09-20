@@ -30,5 +30,15 @@ Pueden evitar todo el proceso por medio de los links de esta lista. Solo selecci
 
 - [07-javascript-inicios](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/07-javascript-inicios)
 
+- [08-jQuery](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/08-jQuery)
+
+- [09-TypeScript](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/09-TypeScript)
+
+- [10-Angular](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/10-Angular)
+
+- [11-React](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/11-React)
+
+- [12-Vue](https://kinolien.github.io/gitzip/?download=https://github.com/Rafael-VLA/wdev-enero24-lm/tree/main/12-Vue)
+
 ## Notas
 - El directorio "docs" no es un proyecto. Se usará para realizar despligues de nuestros proyectos por medio del servicio de github pages.
